@@ -1,38 +1,66 @@
-# Article Management System
+# Mini Search Engine for Articles
 
-The Article Management System is a backend project designed to handle articles. It allows users to add, search, and retrieve articles with metadata efficiently. This system is simple yet powerful, offering keyword-based searches and the ability to retrieve full article details.
+## Project Overview
 
----
+The Mini Search Engine is a lightweight, efficient backend solution for managing and searching articles. Designed to provide fast, relevance-based search capabilities, this project demonstrates a simple yet powerful search engine implementation using in-memory indexing and smart search algorithms.
 
 ## Features
 
-2. **Search Articles**:
-   - Search articles by keywords in the title or content.
-   - Filter articles by tags.
-   - Sort search results by:
-     - **Relevance**: Based on keyword frequency.
-     - **Date**: Most recent articles first.
+### Article Management
+- Add articles with rich metadata (title, content, tags)
+- Unique identifier-based article retrieval
+- Optional file system persistence
 
-3. **Retrieve Articles**:
-   - Fetch full details of a specific article using its unique ID.
+### Advanced Search Functionality
+- Keyword-based search across article titles and content
+- Tag-based filtering
+- Relevance and date-based result sorting
+- Fast in-memory indexing
 
-4. **Persistence**:
-   - Articles are stored in memory for fast access.
-   - Optional persistence to the filesystem using `fs`
+## Technical Specifications
 
----
+### Endpoints
 
-## Endpoints
+1. *Add Article*
+   - *Endpoint:* POST /articles
+   - *Description:* Upload a new article with metadata
+   - *Parameters:* 
+     - Title
+     - Content
+     - Tags (optional)
 
-### 1. Add Article (POST `/articles`)
-Adds a new article with metadata.
+2. *Search Articles*
+   - *Endpoint:* GET /articles/search
+   - *Description:* Search and filter articles
+   - *Query Parameters:*
+     - Keyword
+     - Tag filter
+     - Sorting method (relevance/date)
 
-**Request Body:**
-```json
-{
-  "title": "Understanding Artificial Intelligence",
-  "content": "Artificial Intelligence (AI) is transforming industries.",
-  "tags": ["AI", "technology", "future"]
-}
+3. *Get Article*
+   - *Endpoint:* GET /articles/:id
+   - *Description:* Retrieve full details of a specific article
 
+## Technical Design
 
+### Core Components
+- In-memory article storage using arrays
+- Custom indexing mechanism
+- Relevance calculation engine
+- Optional file system persistence
+
+### Search Algorithm
+- Utilizes keyword frequency for relevance scoring
+- Supports partial and full-text matching
+- Efficient O(n) search complexity
+
+### Performance Optimizations
+- Fast O(1) article retrieval by ID
+- Lightweight indexing strategy
+- Minimal memory overhead
+
+## Key Technical Highlights
+- Flexible article management
+- Intelligent search capabilities
+- Scalable and modular architecture
+- Efficient in-memory processing
