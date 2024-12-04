@@ -1,0 +1,84 @@
+[
+  {
+    "id": 1,
+    "title": "Api",
+    "content": "This is api",
+    "tags": [],
+    "createdAt": "2024-12-03T17:47:33.385Z"
+  },
+  {
+    "id": 2,
+    "title": "Nishmith",
+    "content": "This is api",
+    "tags": [],
+    "createdAt": "2024-12-03T17:47:48.392Z"
+  },
+  {
+    "id": 3,
+    "title": "Pranav",
+    "content": "This is api",
+    "tags": [],
+    "createdAt": "2024-12-03T17:47:55.930Z"
+  },
+  {
+    "id": 4,
+    "title": "The Future of AI",
+    "content": "Artificial Intelligence is shaping the future of technology.",
+    "tags": [
+      "AI",
+      "Future",
+      "Technology"
+    ],
+    "createdAt": "2024-12-03T17:58:35.470Z"
+  },
+  {
+    "id": 5,
+    "title": "The Role of AI in Healthcare",
+    "content": "Artificial Intelligence is revolutionizing healthcare, from diagnosis to treatment.",
+    "tags": [
+      "AI",
+      "Healthcare",
+      "Technology"
+    ],
+    "createdAt": "2024-12-03T18:02:20.565Z"
+  },
+  {
+    "id": 6,
+    "title": "Shiva",
+    "content": "Artificial Intelligence is revolutionizing healthcare, from diagnosis to treatment.",
+    "tags": [
+      "AI",
+      "Healthcare",
+      "Technology"
+    ],
+    "createdAt": "2024-12-04T03:11:30.018Z"
+  },
+  {
+    "id": 7,
+    "title": "Sanjay",
+    "content": "Ram bhakt",
+    "tags": [],
+    "createdAt": "2024-12-04T03:13:37.707Z"
+  },
+  {
+    "id": 8,
+    "title": "Ruthvik",
+    "content": "Hello",
+    "tags": [],
+    "createdAt": "2024-12-04T03:16:40.028Z"
+  },
+  {
+    "id": 9,
+    "title": "Cricket",
+    "content": "Virat Kohli",
+    "tags": [],
+    "createdAt": "2024-12-04T03:23:18.144Z"
+  },
+  {
+    "id": 10,
+    "title": "Cricket",
+    "content": "Rohit sharma",
+    "tags": [],
+    "createdAt": "2024-12-04T03:39:37.002Z"
+  }
+]
