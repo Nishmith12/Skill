@@ -6,9 +6,19 @@ The Article Management System is a backend project designed to handle articles. 
 
 ## Features
 
-- **Add Articles**: Create new articles with metadata such as title, content, and tags.
-- **Search Articles**: Search for articles using keywords or tags.
-- **Retrieve Articles**: Fetch complete details of an article by its ID.
+2. **Search Articles**:
+   - Search articles by keywords in the title or content.
+   - Filter articles by tags.
+   - Sort search results by:
+     - **Relevance**: Based on keyword frequency.
+     - **Date**: Most recent articles first.
+
+3. **Retrieve Articles**:
+   - Fetch full details of a specific article using its unique ID.
+
+4. **Persistence**:
+   - Articles are stored in memory for fast access.
+   - Optional persistence to the filesystem using `fs`
 
 ---
 
@@ -24,3 +34,5 @@ Adds a new article with metadata.
   "content": "Artificial Intelligence (AI) is transforming industries.",
   "tags": ["AI", "technology", "future"]
 }
+
+
